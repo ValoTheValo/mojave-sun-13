@@ -5071,6 +5071,7 @@
 /obj/structure/table/ms13/low_wall/reinforced/bunker,
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/mountain,
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/left,
+/obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/tunnel/maintenance)
 "att" = (
@@ -16435,6 +16436,7 @@
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/right{
 	id = "emergency_lockdown"
 	},
+/obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/tunnel/maintenance)
 "hJy" = (
@@ -19786,6 +19788,7 @@
 /obj/machinery/door/poddoor/shutters/ms13/horizontal/red/mid{
 	id = "emergency_lockdown"
 	},
+/obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/tunnel/maintenance)
 "oAp" = (
