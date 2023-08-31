@@ -446,3 +446,20 @@
 	desc = "A gold textured gang star, issued to gangers with extensive expertise in the field, with multiple years of ganging behind them."
 	icon_state = "ranger_star"
 	trim = /datum/id_trim/centcom/deathsquad
+
+// Enclave IDs //
+
+/obj/item/card/id/ms13/enclave
+	name = "\improper Enclave ID Card"
+	desc = "Placeholder"
+	icon_state = "enc_soldier"
+	access = list(ACCESS_GOVERNMENT)
+
+/obj/item/card/id/ms13/enclave/soldier
+	name = "Enclave Soldier ID Card"
+	assignment = "Enclave Private"
+
+/obj/item/card/id/ms13/enclave/officer
+	name = "Enclave Officer ID Card"
+	icon_state = "enc_officer"
+	assignment = "Enclave Leiutennant"

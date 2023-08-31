@@ -16,6 +16,8 @@
 #define DEPARTMENT_DROUGHTTOWN "Barony"
 #define DEPARTMENT_BITFLAG_DRYLANDER (1<<18)
 #define DEPARTMENT_DRYLANDER "Drylanders"
+#define DEPARTMENT_BITFLAG_ENCLAVE (1<<19)
+#define DEPARTMENT_ENCLAVE "Enclave"
 
 // Fancy name for fancy boys
 /datum/job_department/var/department_full_name = null
@@ -108,6 +110,16 @@
 	department_full_name = "Drylander Tribe"
 	//display_order = 0
 	//label_class = "TOWN"
+	//latejoin_color = "#ffddf0"
+
+/datum/job_department/enclave
+	department_name = DEPARTMENT_ENCLAVE
+	department_bitflags = DEPARTMENT_BITFLAG_ENCLAVE
+	department_head = /datum/job/ms13/
+	department_experience_type = EXP_TYPE_ENCLAVE
+	department_full_name = "The Enclave"
+	//display_order = 0
+	//label_class = "ENCLAVE"
 	//latejoin_color = "#ffddf0"
 
 

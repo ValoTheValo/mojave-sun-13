@@ -26,3 +26,8 @@
 #define ACCESS_BARONY_RESTRICTED 9
 // Doctor's storage/general
 #define ACCESS_BARONY_DOCTOR 10
+
+//// Enclave Area Access ////
+
+// General Enclave/Pre War Access
+#define ACCESS_GOVERNMENT 11

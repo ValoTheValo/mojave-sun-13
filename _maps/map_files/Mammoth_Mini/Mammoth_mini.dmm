@@ -5959,6 +5959,10 @@
 	},
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/town)
+"gbp" = (
+/obj/structure/ms13/wall_decor/sign,
+/turf/open/floor/ms13/concrete/industrial,
+/area/ms13/underground/tunnel/maintenance)
 "gbX" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /obj/effect/spawner/random/ms13/drink/soda,
@@ -6578,6 +6582,12 @@
 /obj/machinery/light/ms13,
 /turf/open/floor/ms13/concrete,
 /area/ms13/underground/bos)
+"gzc" = (
+/obj/machinery/door/airlock/ms13{
+	dir = 4
+	},
+/turf/open/floor/ms13/concrete/industrial,
+/area/ms13/underground/mountain)
 "gzj" = (
 /obj/machinery/griddle/ms13{
 	dir = 8
@@ -24683,6 +24693,15 @@
 	},
 /turf/open/floor/ms13/concrete,
 /area/ms13/underground/tunnel/maintenance)
+"wDk" = (
+/obj/structure/ms13/skeleton,
+/obj/item/clothing/head/helmet/ms13/army/civildefence{
+	layer = 2.8;
+	pixel_x = -3;
+	pixel_y = 12
+	},
+/turf/open/floor/ms13/concrete/industrial,
+/area/ms13/underground/mountain)
 "wDw" = (
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/ms13/concrete/industrial,
@@ -60555,7 +60574,7 @@ anp
 anp
 anp
 anp
-thB
+wfI
 vQh
 vQh
 vQh
@@ -60782,8 +60801,8 @@ anp
 anp
 anp
 anp
-wfI
-vQh
+qMX
+tQA
 kQE
 tHb
 vQh
@@ -61010,15 +61029,15 @@ vQh
 vQh
 vQh
 qMX
-tQA
 vQh
 vQh
 vQh
 vQh
 vQh
-khQ
-khQ
-khQ
+vQh
+vQh
+vQh
+vQh
 khQ
 khQ
 lxu
@@ -61236,15 +61255,15 @@ vQh
 vQh
 vQh
 vQh
-qMX
-vQh
-vQh
 khQ
 khQ
 khQ
 khQ
-khQ
-khQ
+oJD
+oJD
+gzc
+oJD
+oJD
 khQ
 khQ
 khQ
@@ -61467,11 +61486,11 @@ khQ
 khQ
 khQ
 khQ
-khQ
-khQ
-khQ
-khQ
-khQ
+oJD
+eOo
+eOo
+eOo
+oJD
 khQ
 khQ
 khQ
@@ -61695,7 +61714,7 @@ khQ
 khQ
 khQ
 khQ
-khQ
+wDk
 khQ
 khQ
 khQ
@@ -63062,7 +63081,7 @@ khQ
 eOo
 khQ
 oJD
-vlA
+gbp
 khQ
 tkl
 tkl
