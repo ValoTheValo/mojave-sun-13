@@ -3661,8 +3661,8 @@
 /turf/open/ms13/water/sewer/medium,
 /area/ms13/underground/sewer)
 "aDc" = (
-/obj/structure/table/ms13/metal/grate,
-/obj/effect/spawner/random/ms13/medical/lowrandom,
+/obj/structure/table/ms13/crafting/armorbench,
+/obj/effect/spawner/random/ms13/guaranteed/crafting/highrandom,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/enclave_base)
 "aDd" = (
@@ -3686,11 +3686,12 @@
 /turf/open/floor/ms13/tile/blue/long,
 /area/ms13/town)
 "aDr" = (
-/obj/structure/table/ms13/metal/grate,
-/obj/structure/ms13/storage/vent,
-/obj/effect/spawner/random/ms13/tools/tool,
-/turf/open/floor/ms13/metal,
-/area/ms13/underground/enclave_base)
+/obj/structure/lattice/catwalk/ms13,
+/obj/structure/ms13/lamp/mining_lamp/on{
+	pixel_y = 30
+	},
+/turf/open/ms13/water/sewer/deep,
+/area/ms13/underground/mountain)
 "aDt" = (
 /obj/machinery/light/ms13/bulb,
 /turf/open/floor/wood/ms13/carpet/shaggy/green,
@@ -3814,8 +3815,9 @@
 /turf/open/floor/ms13/metal,
 /area/ms13/town)
 "aEv" = (
-/obj/structure/table/ms13/metal/grate,
-/obj/effect/spawner/random/ms13/guaranteed/crafting/highrandom,
+/obj/structure/chair/ms13/metal{
+	dir = 1
+	},
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/enclave_base)
 "aEx" = (
@@ -3883,10 +3885,10 @@
 /turf/closed/wall/ms13/wood,
 /area/ms13/underground/underground_town)
 "aET" = (
-/obj/structure/chair/ms13/metal{
-	dir = 8
+/obj/machinery/light/ms13{
+	dir = 4
 	},
-/turf/open/floor/ms13/metal,
+/turf/open/floor/ms13/metal/grate/border,
 /area/ms13/underground/enclave_base)
 "aEV" = (
 /obj/structure/table/ms13/metal/grate,
@@ -4157,7 +4159,6 @@
 	dir = 4
 	},
 /obj/effect/spawner/random/ms13/ammo/lowrandom,
-/obj/item/clothing/under/ms13/enclave,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/enclave_base)
 "aHv" = (
@@ -9158,6 +9159,12 @@
 /obj/structure/chair/comfy/ms13/armchair,
 /turf/open/floor/wood/ms13/fancy,
 /area/ms13/underground/enclave_base)
+"iPl" = (
+/obj/structure/closet/crate/ms13/enclave{
+	dir = 1
+	},
+/turf/open/floor/ms13/metal,
+/area/ms13/underground/enclave_base)
 "iPH" = (
 /obj/machinery/door/unpowered/ms13/wood/red,
 /turf/open/floor/wood/ms13/carpet/blue,
@@ -9602,6 +9609,10 @@
 /obj/machinery/light/ms13/bulb/industrial,
 /turf/open/floor/ms13/concrete,
 /area/ms13/ncr/building)
+"jZY" = (
+/obj/structure/table/ms13/crafting/workbench,
+/turf/open/floor/ms13/metal,
+/area/ms13/underground/enclave_base)
 "kar" = (
 /obj/structure/filingcabinet/ms13{
 	dir = 1;
@@ -9815,9 +9826,11 @@
 /turf/open/floor/ms13/concrete,
 /area/ms13/underground/sewer)
 "kIt" = (
-/obj/structure/table/ms13/crafting/workbench,
-/turf/open/floor/ms13/metal,
-/area/ms13/underground/enclave_base)
+/obj/structure/ms13/trash/bricks{
+	dir = 4
+	},
+/turf/open/floor/ms13/sewer,
+/area/ms13/underground/sewer)
 "kIC" = (
 /obj/structure/ms13/celldoor/rusty,
 /obj/structure/railing/ms13/sewer{
@@ -9923,8 +9936,8 @@
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/underground/sewer)
 "kYP" = (
-/obj/structure/bed/ms13/bedframe/metal,
-/obj/structure/bed/ms13/mattress/dirty,
+/obj/structure/table/ms13/metal,
+/obj/effect/spawner/random/ms13/medical/lowrandom,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/enclave_base)
 "kZg" = (
@@ -12105,9 +12118,7 @@
 /area/ms13/underground/underground_town)
 "qgR" = (
 /obj/structure/ms13/cave_decor/support/beams,
-/obj/structure/table/ms13/crafting/ammobench{
-	layer = 3.1
-	},
+/obj/structure/table/ms13/crafting/ammobench,
 /turf/open/floor/plating/ms13/ground/mountain,
 /area/ms13/underground/mountain)
 "qgW" = (
@@ -12287,9 +12298,8 @@
 /turf/open/floor/ms13/tile/long,
 /area/ms13/town)
 "qHV" = (
-/obj/structure/closet/crate/ms13/enclave{
-	dir = 1
-	},
+/obj/structure/bed/ms13/bedframe/metal,
+/obj/structure/bed/ms13/mattress/dirty,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/enclave_base)
 "qHZ" = (
@@ -17707,7 +17717,7 @@ afU
 afU
 afU
 rvc
-akx
+avt
 akx
 akx
 akx
@@ -18422,7 +18432,7 @@ ain
 aCA
 ahM
 ahM
-akC
+kYP
 ahM
 ahM
 mKd
@@ -18647,7 +18657,7 @@ ain
 ain
 afE
 aCW
-alt
+ahM
 ahM
 aMe
 ahM
@@ -19100,8 +19110,8 @@ ahM
 ahM
 geE
 ain
-aDr
-aET
+aGk
+ahM
 ahM
 ahM
 ahM
@@ -19770,7 +19780,7 @@ rvc
 afU
 ain
 aiu
-ahM
+axF
 ahM
 aly
 ain
@@ -20191,8 +20201,8 @@ afU
 afU
 afU
 afU
-afU
-apq
+ahY
+aDr
 apq
 apq
 apq
@@ -21357,11 +21367,11 @@ pbz
 pbz
 afE
 aVU
-ais
+aET
 akB
 all
 aij
-ais
+aET
 amA
 afE
 aud
@@ -24050,7 +24060,7 @@ afU
 afU
 aow
 aow
-aow
+aRM
 afU
 aZW
 afU
@@ -24275,8 +24285,8 @@ afU
 afU
 afU
 afU
-aow
-aow
+aRM
+aRM
 aRM
 afU
 afU
@@ -25242,7 +25252,7 @@ aWZ
 aYQ
 arv
 ain
-kIt
+ahM
 ahM
 axz
 ain
@@ -25469,9 +25479,9 @@ ain
 ain
 ain
 ain
+jZY
 ahM
-ahM
-ahM
+iPl
 ain
 afU
 afU
@@ -25696,7 +25706,7 @@ afU
 afU
 afU
 ain
-kYP
+ahM
 ahM
 qHV
 ain
@@ -29314,7 +29324,7 @@ anN
 anN
 aow
 anN
-mCa
+kIt
 gNk
 svZ
 kCx
