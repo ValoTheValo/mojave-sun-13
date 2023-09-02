@@ -4,7 +4,7 @@
 		/datum/job_department/enclave,
 	)
 	forbid = "Avoid revealing enclave presence. Unauthorized chem use is forbidden."
-	enforce = "Abide by the Codex. Listen to and respect your fellow brothers. Help the needy but do not place them above the cause."
+	enforce = "Destroy all Mutants and Communists on american soil. restore america to its glory."
 
 /datum/outfit/job/ms13/enclave
 	name = "Default"
