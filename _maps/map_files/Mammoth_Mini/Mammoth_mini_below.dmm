@@ -5805,13 +5805,6 @@
 /obj/structure/table/ms13/no_smooth/counter/metal,
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
-"aWF" = (
-/obj/structure/table/ms13/metal,
-/obj/item/reagent_containers/glass/beaker{
-	pixel_y = 15
-	},
-/turf/open/floor/ms13/metal,
-/area/ms13/underground/enclave_base)
 "aWJ" = (
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/underground/bos)
@@ -5875,8 +5868,8 @@
 /area/ms13/underground/underground_town)
 "aXo" = (
 /obj/structure/table/ms13/metal,
-/obj/structure/microscope{
-	pixel_y = 12
+/obj/item/ms13/fluff/microscope{
+	pixel_y = 9
 	},
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/enclave_base)
@@ -19510,7 +19503,7 @@ ain
 ain
 whL
 aVx
-aWF
+akC
 aXo
 afE
 afU

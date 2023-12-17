@@ -14010,8 +14010,10 @@
 /turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/desert)
 "qgT" = (
-/mob/living/basic/ms13/ghoul/brown,
-/turf/open/floor/plating/ms13/ground/desert,
+/obj/structure/ms13/road_barrier{
+	dir = 8
+	},
+/turf/open/floor/plating/ms13/ground/road,
 /area/ms13/desert)
 "qhd" = (
 /obj/structure/table/ms13/no_smooth/counter/metal,
@@ -14635,6 +14637,12 @@
 	pixel_y = 14
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
+/area/ms13/desert)
+"qHt" = (
+/obj/structure/ms13/road_barrier{
+	dir = 4
+	},
+/turf/open/floor/plating/ms13/ground/road,
 /area/ms13/desert)
 "qHG" = (
 /obj/machinery/door/unpowered/ms13/metal/red{
@@ -34461,21 +34469,21 @@ oSs
 oSs
 oSs
 oSs
-pyv
-hgp
-hgp
-hgp
-hgp
-oSs
-oSs
-oSs
 hgp
 hgp
 hgp
 hgp
 hgp
 oSs
-qgT
+oSs
+oSs
+hgp
+hgp
+hgp
+hgp
+hgp
+oSs
+oSs
 oSs
 oSs
 oSs
@@ -36290,7 +36298,7 @@ oSs
 oSs
 oSs
 oSs
-pyv
+hgp
 hgp
 hgp
 hgp
@@ -36480,7 +36488,7 @@ oSs
 oSs
 wfn
 oSs
-qgT
+oSs
 oSs
 oSs
 hgp
@@ -37294,7 +37302,7 @@ oSs
 oSs
 oSs
 oSs
-qgT
+oSs
 hgp
 hgp
 hgp
@@ -38297,7 +38305,7 @@ oSs
 oSs
 oSs
 oSs
-qgT
+oSs
 oSs
 oSs
 oSs
@@ -42351,7 +42359,7 @@ hQa
 ktX
 oSs
 oSs
-sgj
+oSs
 oSs
 blm
 blm
@@ -42543,7 +42551,7 @@ blm
 blm
 blm
 oSs
-sgj
+oSs
 oSs
 oSs
 oSs
@@ -43355,9 +43363,9 @@ gSP
 gSP
 gSP
 ffi
-hQa
+qgT
 wHx
-hQa
+qgT
 ffi
 gSP
 gSP
@@ -44769,9 +44777,9 @@ gSP
 gSP
 gSP
 ffi
-hQa
+qHt
 gSP
-hQa
+qHt
 ffi
 gSP
 gSP
@@ -44972,7 +44980,7 @@ gSP
 kap
 ffi
 hQa
-hQa
+wHx
 hQa
 ffi
 kap
@@ -45174,7 +45182,7 @@ oSs
 vUa
 tHC
 hQa
-wHx
+hQa
 hQa
 tHC
 qoV
@@ -45376,7 +45384,7 @@ oSs
 oSs
 jJD
 hQa
-hQa
+wHx
 hQa
 jJD
 oSs

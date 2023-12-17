@@ -8617,6 +8617,9 @@
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
+"Ec" = (
+/turf/closed/wall/ms13/craftable/wood,
+/area/ms13/desert)
 "Ed" = (
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
 /obj/machinery/griddle/ms13,
@@ -9624,12 +9627,12 @@
 "Hw" = (
 /obj/structure/ms13/wall_decor/flag/rangers,
 /obj/structure/table/ms13/no_smooth/large/wood/desk,
-/obj/item/radio/ms13/ham,
 /obj/item/ms13/fluff/ashtray{
 	pixel_x = 13;
 	pixel_y = 6
 	},
 /obj/effect/mapping_helpers/sunlight/pseudo_roof_setter/wood,
+/obj/item/radio/ms13/ham/broadcast,
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/rangeroutpost/building)
 "Hx" = (
@@ -47419,15 +47422,15 @@ MG
 MG
 MG
 Yz
-cH
-cH
-cH
-cH
+Ec
+Ec
+Ec
+Ec
 Yz
-cH
-cH
-cH
-cH
+Ec
+Ec
+Ec
+Ec
 db
 MG
 MG
@@ -47823,10 +47826,10 @@ MG
 MG
 MG
 Yz
-eX
-eX
-eX
-eX
+cH
+cH
+cH
+cH
 Yz
 cH
 cH
