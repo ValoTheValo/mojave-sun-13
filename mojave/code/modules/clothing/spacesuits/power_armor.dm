@@ -135,7 +135,7 @@
 	anchored = TRUE
 	strip_delay = 15 SECONDS
 	integrity_failure = 0.5
-	max_integrity = 500
+	max_integrity = 450
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
@@ -505,6 +505,7 @@
 	ADD_TRAIT(user, TRAIT_QUICKER_CARRY, "power_armor")
 	ADD_TRAIT(user, TRAIT_PUSHIMMUNE, "power_armor")
 	ADD_TRAIT(user, TRAIT_NON_FLAMMABLE, "power_armor")
+	ADD_TRAIT(user, TRAIT_IN_POWERARMOUR, "power_armor")
 	RegisterSignal(user, COMSIG_ATOM_CAN_BE_PULLED, .proc/reject_pulls)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/dropped(mob/living/carbon/human/user)
@@ -525,6 +526,7 @@
 	REMOVE_TRAIT(user, TRAIT_QUICKER_CARRY, "power_armor")
 	REMOVE_TRAIT(user, TRAIT_PUSHIMMUNE, "power_armor")
 	REMOVE_TRAIT(user, TRAIT_NON_FLAMMABLE, "power_armor")
+	REMOVE_TRAIT(user, TRAIT_IN_POWERARMOUR, "power_armor")
 	UnregisterSignal(user, COMSIG_ATOM_CAN_BE_PULLED)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/proc/reject_pulls(datum/source, mob/living/puller)
@@ -629,7 +631,7 @@
 	light_range = 4.20
 	light_power = 0.9
 	light_color = "#d1c58d"
-	max_integrity = 380
+	max_integrity = 340
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t51
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
@@ -664,7 +666,7 @@
 	light_range = 4
 	light_power = 0.8
 	light_color = "#dabc7c"
-	max_integrity = 280
+	max_integrity = 240
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t45
 	subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \

@@ -65,8 +65,14 @@
 /obj/item/stack/ms13/currency/prewar/hunnedfourty
 	amount = 140
 
+/obj/item/stack/ms13/currency/prewar/hunnedeighty
+	amount = 180
+
+/obj/item/stack/ms13/currency/prewar/underboss
+	amount = 300
+
 /obj/item/stack/ms13/currency/prewar/mayor
-	amount = 325
+	amount = 400
 
 /obj/item/stack/ms13/currency/ncr_dollar
 	name = "\improper NCR dollars"
@@ -250,6 +256,6 @@
 	amount = 125
 
 /obj/item/stack/ms13/currency/cap/baron
-	amount = 200
+	amount = 300
 
 // Ideas- NCR dollar spawns 20% of the time.

@@ -106,6 +106,12 @@
 	screen_start_y = 4
 	screen_start_x = 15
 
+/datum/component/storage/concrete/ms13/toolbox //main for toolboxes
+	screen_max_columns = 6
+	screen_max_rows = 4
+	screen_start_y = 5
+	screen_start_x = 13
+
 /datum/component/storage/concrete/ms13/pillbottle // for pill bottles
 	screen_max_columns = 2
 	screen_max_rows = 4
@@ -117,6 +123,13 @@
 	screen_max_rows = 2
 	screen_start_y = 4
 	screen_start_x = 8
+	rustle_sound = FALSE
+
+/datum/component/storage/concrete/ms13/washing //for washing machine
+	screen_max_columns = 10
+	screen_max_rows = 10
+	screen_start_y = 12
+	screen_start_x = 5
 	rustle_sound = FALSE
 
 /datum/component/storage/concrete/ms13/matchbox //for matchboxes

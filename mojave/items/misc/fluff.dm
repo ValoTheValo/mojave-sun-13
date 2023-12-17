@@ -10,26 +10,14 @@
 /obj/item/ms13/fluff/ruined_book
 	name = "ruined book"
 	desc = "A book that's been rendered unreadable from decades of decay."
-	icon_state = "book"
+	icon_state = "book_1"
 	drop_sound = 'sound/items/handling/book_drop.ogg'
 	pickup_sound = 'sound/items/handling/book_pickup.ogg'
 
 /obj/item/ms13/fluff/ruined_book/Initialize(mapload)
 	. = ..()
-	icon_state = pick("book2","book3","book4","book5","book6")
-	AddElement(/datum/element/craftable, /obj/item/knife/ms13, /obj/item/paper/ms13, rand(1,5), 30 SECONDS, crafting_sound_start = 'mojave/sound/ms13effects/book_open.ogg', crafting_focus_sound = list('mojave/sound/ms13effects/crafting/scissorsnip1.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip2.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip3.ogg' = 1))
-
-/obj/item/ms13/fluff/burnt_book
-	name = "burnt book"
-	desc = "A book that's been rendered unreadable due to severe burns."
-	icon_state = "book_burnt"
-	drop_sound = 'sound/items/handling/book_drop.ogg'
-	pickup_sound = 'sound/items/handling/book_pickup.ogg'
-
-/obj/item/ms13/fluff/burnt_book/Initialize(mapload) //huge shoutout to techno for making all of these seperate
-	. = ..()
-	icon_state = pick("book_burnt2","book_burnt3")
-	AddElement(/datum/element/craftable, /obj/item/knife/ms13, /obj/item/paper/ms13, rand(1,3), 30 SECONDS, crafting_sound_start = 'mojave/sound/ms13effects/book_open.ogg', crafting_focus_sound = list('mojave/sound/ms13effects/crafting/scissorsnip1.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip2.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip3.ogg' = 1))
+	icon_state = pick("book_1","book_2","book_3","book_4")
+	AddElement(/datum/element/craftable, /obj/item/knife/ms13, /obj/item/paper/ms13, rand(1,5), 20 SECONDS, crafting_sound_start = 'mojave/sound/ms13effects/book_open.ogg', crafting_focus_sound = list('mojave/sound/ms13effects/crafting/scissorsnip1.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip2.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip3.ogg' = 1))
 
 /obj/item/ms13/fluff/bible
 	name = "bible"
@@ -40,7 +28,7 @@
 
 /obj/item/ms13/fluff/bible/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/craftable, /obj/item/knife/ms13, /obj/item/paper/ms13, rand(1,6), 30 SECONDS, crafting_sound_start = 'mojave/sound/ms13effects/book_open.ogg', crafting_focus_sound = list('mojave/sound/ms13effects/crafting/scissorsnip1.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip2.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip3.ogg' = 1))
+	AddElement(/datum/element/craftable, /obj/item/knife/ms13, /obj/item/paper/ms13, rand(1,6), 20 SECONDS, crafting_sound_start = 'mojave/sound/ms13effects/book_open.ogg', crafting_focus_sound = list('mojave/sound/ms13effects/crafting/scissorsnip1.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip2.ogg' = 1, 'mojave/sound/ms13effects/crafting/scissorsnip3.ogg' = 1))
 
 /obj/item/ms13/fluff/typewriter
 	name = "typewriter"
@@ -56,9 +44,10 @@
 /obj/item/ms13/fluff/typewriter/wrench_act_secondary(mob/living/user, obj/item/weapon)
 	user.show_message(span_notice("You begin disassembling \the [src]."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
+		var/drop_location = user.drop_location()
 		user.show_message(span_notice("You disassemble \the [src] into scrap."), MSG_VISUAL)
-		new /obj/item/stack/sheet/ms13/scrap(loc, 3)
-		new /obj/item/stack/sheet/ms13/scrap_parts(loc, 3)
+		new /obj/item/stack/sheet/ms13/scrap(drop_location, 3)
+		new /obj/item/stack/sheet/ms13/scrap_parts(drop_location, 3)
 		qdel(src)
 
 /obj/item/ms13/fluff/typewriter/examine(mob/user)
@@ -90,10 +79,11 @@
 /obj/item/ms13/fluff/microscope/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
 	user.show_message(span_notice("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
+		var/drop_location = user.drop_location()
 		user.show_message(span_notice("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
-		new /obj/item/stack/sheet/ms13/glass(loc, 3)
-		new /obj/item/stack/sheet/ms13/scrap(loc, 2)
-		new /obj/item/stack/sheet/ms13/scrap_electronics(loc, 2)
+		new /obj/item/stack/sheet/ms13/glass(drop_location, 3)
+		new /obj/item/stack/sheet/ms13/scrap(drop_location, 2)
+		new /obj/item/stack/sheet/ms13/scrap_electronics(drop_location, 2)
 		qdel(src)
 
 /obj/item/ms13/fluff/microscope/examine(mob/user)
@@ -176,11 +166,12 @@
 /obj/item/ms13/fluff/alarmclock/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
 	user.show_message(span_notice("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
+		var/drop_location = user.drop_location()
 		user.show_message(span_notice("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
-		new /obj/item/stack/sheet/ms13/glass(loc, 1)
-		new /obj/item/stack/sheet/ms13/scrap(loc, 2)
-		new /obj/item/stack/sheet/ms13/scrap_electronics(loc, 1)
-		new /obj/item/stack/sheet/ms13/circuits(loc, 1)
+		new /obj/item/stack/sheet/ms13/glass(drop_location, 1)
+		new /obj/item/stack/sheet/ms13/scrap(drop_location, 2)
+		new /obj/item/stack/sheet/ms13/scrap_electronics(drop_location, 1)
+		new /obj/item/stack/sheet/ms13/circuits(drop_location, 1)
 		qdel(src)
 
 /obj/item/ms13/fluff/alarmclock/examine(mob/user)
@@ -214,9 +205,10 @@
 /obj/item/ms13/fluff/trifoldflag/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
 	user.show_message(span_notice("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
+		var/drop_location = user.drop_location()
 		user.show_message(span_notice("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
-		new /obj/item/stack/sheet/ms13/cloth(loc, 3)
-		new /obj/item/stack/sheet/ms13/wood/scrap_wood(loc, 2)
+		new /obj/item/stack/sheet/ms13/cloth(drop_location, 3)
+		new /obj/item/stack/sheet/ms13/wood/scrap_wood(drop_location, 2)
 		qdel(src)
 
 /obj/item/ms13/fluff/trifoldflag/examine(mob/user)

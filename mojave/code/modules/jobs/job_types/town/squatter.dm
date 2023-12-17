@@ -1,5 +1,5 @@
 /datum/job/ms13/town/squatter
-	title = "Town Squatter"
+	title = "Snowcrest Squatter"
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "NCR law enforcement, the Mayor and his bodyguards"
@@ -11,8 +11,10 @@
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SQUATTER
 
+	guestbook_flags = GUESTBOOK_FORGETMENOT //anonymity from the rest of town
+
 /datum/outfit/job/ms13/town/squatter
-	name = "_Town Squatter"
+	name = "_Snowcrest Squatter"
 	jobtype = /datum/job/ms13/town/squatter
 
 	back =       null
@@ -69,7 +71,7 @@
 	else
 		suit = null
 
-	if(prob(25))
+	if(prob(20))
 		head = pick(
 		/obj/item/clothing/head/helmet/ms13/baseball,\
 		/obj/item/clothing/head/helmet/ms13/cowboy,\

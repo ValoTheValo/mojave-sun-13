@@ -3,9 +3,9 @@
 #define DEPARTMENT_BITFLAG_BOS (1<<11)
 #define DEPARTMENT_BOS "BOS"
 #define DEPARTMENT_BITFLAG_RAIDERS (1<<12)
-#define DEPARTMENT_RAIDERS "Raiders"
+#define DEPARTMENT_RAIDERS "Gangs"
 #define DEPARTMENT_BITFLAG_TOWN (1<<13)
-#define DEPARTMENT_TOWN "Town"
+#define DEPARTMENT_TOWN "Snowcrest"
 #define DEPARTMENT_BITFLAG_WASTELAND (1<<14)
 #define DEPARTMENT_WASTELAND "Wasteland"
 #define DEPARTMENT_BITFLAG_LEGION (1<<15)
@@ -23,7 +23,6 @@
 /datum/job_department/ncr
 	department_name = DEPARTMENT_NCR
 	department_bitflags = DEPARTMENT_BITFLAG_NCR
-	department_head = /datum/job/ms13/ncr/lieutenant
 	department_experience_type = EXP_TYPE_NCR
 	department_full_name = "The New California Republic"
 	//display_order = 0
@@ -65,9 +64,8 @@
 /datum/job_department/raiders
 	department_name = DEPARTMENT_RAIDERS
 	department_bitflags = DEPARTMENT_BITFLAG_RAIDERS
-	department_head = /datum/job/ms13/raiders/boss
 	department_experience_type = EXP_TYPE_RAIDERS
-	department_full_name = "The Blizzard Bastards"
+	department_full_name = "Gangs of Mammoth"
 	//display_order = 0
 	//label_class = "RAIDERS"
 	//latejoin_color = "#ffddf0"
@@ -77,6 +75,7 @@
 	department_bitflags = DEPARTMENT_BITFLAG_TOWN
 	department_head = /datum/job/ms13/town/mayor
 	department_experience_type = EXP_TYPE_TOWN
+	department_full_name = "Town of Snowcrest"
 	//display_order = 0
 	//label_class = "TOWN"
 	//latejoin_color = "#ffddf0"
@@ -120,9 +119,9 @@
 		"Legion_flag.png" = 'mojave/icons/faction_flags/flag_legion.png',
 		"Rangers_flag.png" = 'mojave/icons/faction_flags/flag_rangers.png',
 		"BOS_flag.png" = 'mojave/icons/faction_flags/flag_brotherhood.png',
-		"Raiders_flag.png" = 'mojave/icons/faction_flags/flag_raiders.png',
-		"Town_flag.png" = 'mojave/icons/faction_flags/flag_towner.png',
+		"Gangs_flag.png" = 'mojave/icons/faction_flags/flag_raiders.png',
+		"Snowcrest_flag.png" = 'mojave/icons/faction_flags/flag_wastelanders.png', //placeholder
 		"Wasteland_flag.png" = 'mojave/icons/faction_flags/flag_wastelanders.png',
-		"Barony_flag.png" = 'mojave/icons/faction_flags/flag_wastelanders.png',
+		"Barony_flag.png" = 'mojave/icons/faction_flags/flag_wastelanders.png', //placeholder
 		"Drylanders_flag.png" = 'mojave/icons/faction_flags/flag_wastelanders.png'
 	)

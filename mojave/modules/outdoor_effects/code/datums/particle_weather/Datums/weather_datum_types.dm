@@ -39,7 +39,7 @@
 
 //STOLEN
 /datum/particle_weather/radiation_storm/weather_act(mob/living/L)
-	var/resist = L.getarmor(null)
+	var/resist = L.getsubarmor()
 	if(prob(40))
 		if(ishuman(L))
 			var/mob/living/carbon/human/H = L
@@ -137,6 +137,6 @@
 
 //Makes you a lot little chilly
 /datum/particle_weather/snow_storm/weather_act(mob/living/L)
-	if(ishuman(L))
-		L.blur_eyes(5)
+	if(ishuman(L) && !L.is_eyes_covered())
+		L.blur_eyes(5.5)
 

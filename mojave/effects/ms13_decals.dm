@@ -91,6 +91,12 @@
 /obj/effect/turf_decal/ms13/graffiti/gohome
 	icon_state = "gohome"
 
+/obj/effect/turf_decal/ms13/graffiti/arrow
+	icon_state = "arrow"
+
+/obj/effect/turf_decal/ms13/graffiti/danger
+	icon_state = "danger"
+
 /obj/effect/turf_decal/ms13/graffiti/fuckyou
 	icon_state = "fuckyou"
 
@@ -211,8 +217,38 @@
 /obj/effect/turf_decal/ms13/graffiti/scorpion_south
 	icon_state = "scorpion_south"
 
+/obj/effect/turf_decal/ms13/graffiti/ncr_stop
+	icon_state = "ncr_stop"
+
+/obj/effect/turf_decal/ms13/graffiti/ncr_caution
+	icon_state = "ncr_caution"
+
+/obj/effect/turf_decal/ms13/graffiti/ncr_bear
+	icon_state = "ncr_bear"
+
+/obj/effect/turf_decal/ms13/graffiti/ncr
+	icon_state = "ncr"
+
+/obj/effect/turf_decal/ms13/graffiti/do_not
+	icon_state = "donot"
+
+/obj/effect/turf_decal/ms13/graffiti/death
+	icon_state = "death"
+
+/obj/effect/turf_decal/ms13/graffiti/die_young
+	icon_state = "dieyoung"
+
+/obj/effect/turf_decal/ms13/graffiti/reaper
+	icon_state = "reaper"
+
+/obj/effect/turf_decal/ms13/graffiti/mark
+	icon_state = "mark"
+
+/obj/effect/turf_decal/ms13/graffiti/slumbers
+	icon_state = "slumbers"
+
 /obj/effect/turf_decal/ms13/graffiti/large
-	icon = 'mojave/icons/decals/graffiti64x32.dmi'
+	icon = 'mojave/icons/decals/graffiti64x64.dmi'
 
 /obj/effect/turf_decal/ms13/graffiti/large/nogod_red
 	icon_state = "nogod_red"
@@ -225,6 +261,12 @@
 
 /obj/effect/turf_decal/ms13/graffiti/large/nofuture_black
 	icon_state = "nofuture_black"
+
+/obj/effect/turf_decal/ms13/graffiti/large/checkpoint_decal
+	icon_state = "checkpoint_decal"
+
+/obj/effect/turf_decal/ms13/graffiti/large/workers_decal
+	icon_state = "workers_decal"
 
 // Posters
 
