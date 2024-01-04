@@ -14,6 +14,7 @@
 /datum/outfit/job/ms13/ranger/doctor
 	name = "_Desert Ranger Doctor"
 	jobtype = 	 /datum/job/ms13/ranger/rdoctor
+	head = 		 /obj/item/clothing/head/helmet/ms13/cowboy/ranger
 	id = 		 /obj/item/card/id/ms13/ranger_doctor
 	belt = 	     /obj/item/storage/firstaid/ms13/regular
 	r_hand =     /obj/item/storage/firstaid/ms13/bag/filled

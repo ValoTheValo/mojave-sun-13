@@ -275,8 +275,8 @@
 
 /obj/item/card/id/ms13/ranger
 	name = "ranger badge"
-	desc = "A gold rimmed Ranger badge with a silver star. Worn by your average Desert Ranger."
-	icon_state = "ranger"
+	desc = "A gold star Ranger badge. Worn by all Desert Rangers."
+	icon_state = "ranger_chief"
 	assignment = "Desert Ranger"
 	shows_age = FALSE
 
